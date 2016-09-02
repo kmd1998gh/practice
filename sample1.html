@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>基礎練習</title>
+<script type="text/JavaScript"><!--
+	function OnButtonClick() {     //ボタンをクリックされたときに実行
+		document.write(100 + "<br>");//文字の出力 htmlによる改行
+		var num;//変数の宣言
+		num = "abc"//値の代入
+		document.write(num + "<br>");//変数の出力
+		var num1 , num2 = 200;//一度に複数の宣言
+		num = num1 = 100;//一度に複数の値代入
+		document.write(num +num1 + num2);//出力内の計算
+		alert("テスト\nｘｘｘ");//アラート画面の表示 特殊文字の使用
+	  A = prompt("Aの値を入力してください", "");//入力ボックスの表示
+		document.write("<br>A="+A);//Aに入力された値の表示
+	}
+// --></script>
+</head>
+<body>
+	<input type="button" value="実行" onclick="OnButtonClick();"/><br />
+	<!-- ボタンをクリックしたときにJavaScriptの実行-->
+</body>
+</html>

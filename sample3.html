@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<title>基礎練習3</title>
+<script type="text/javaScript"><!--
+  function OnButtonClick(){
+    for(i=0;i<5;i++){ //iが5より小さい間繰り返す
+      document.write(i+"<br>");//0~4の出力
+    }
+    s=1;
+    while(s<=3){ //ｓが3以下の間繰り返す
+      document.write(s + "<br>");//1～3の出力
+      s++;//s=s+1
+    }
+    n = prompt("nの値を入力","");
+    if(n==1){ //もしｎが1ならば
+      document.write("nの値は1です");
+    }else if(n<=5){ //もしnが1ではなく5以下ならば
+      document.write("nの値は5以下です");
+    }else{  //もしｎが5より大きいならば
+      document.write("nの値は5より大きいです");
+    }
+  }
+// --></script>
+</head>
+<body>
+  <input type="button" value="実行" onclick="OnButtonClick();"/><br />
+</body>
+</html>

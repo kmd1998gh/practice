@@ -1,0 +1,31 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>基礎練習　その2</title>
+<script type="text/JavaScript"><!--
+  function OnButtonClick() {
+    a=new Array();//配列の作成1
+    a[0]=10;//値の代入
+    a[1]=20;
+
+    b=new Array(30,40);//配列の作成2 対応する値が代入されている配列b[0]～[1]の作成
+    c=new Array(3)//配列の作成3 この場合は配列cを[0]～[2]作成 値は空
+
+    d=[50,"おにぎり"];//配列の作成4 new Array() は省略も可 文字との混在も可
+    e=[60]//配列の作成5 この場合は配列e[0]に60を代入
+    for(i=0;i<2;i++){
+      document.write("a["+i+"]="+a[i]+"<br>b["+i+"]="+b[i]+
+                     "<br>c["+i+"]="+c[i]+"<br>d["+i+"]="+
+                     d[i]+"<br><br>");
+                     //for文を用いた出力
+    }
+    document.write("e[0]="+e[0]);
+  }
+// --></script>
+</head>
+<body>
+  <input type="button" value="実行" onclick="OnButtonClick();"/><br />
+  </body>
+</html>
